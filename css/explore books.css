@@ -1,0 +1,76 @@
+/* ================= EXPLORE BOOKS HERO ================= */
+.explore-hero {
+  min-height: 85vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #222;
+  padding: 70px 0 40px;
+  overflow: hidden;
+}
+
+/* ✅ REAL IMAGE (replaces background-image) */
+.hero-img-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes it behave like background */
+  z-index: 0;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(205, 205, 205, 0.55);
+  z-index: 1;
+}
+
+/* Content above image */
+.explore-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Typography */
+.explore-hero .hero-title {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.explore-hero .lead {
+  font-size: 1.35rem;
+  font-weight: 300;
+  color: #222;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .explore-hero {
+    min-height: 70vh;
+    padding: 100px 0 80px;
+  }
+
+  .explore-hero .hero-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .explore-hero {
+    min-height: 60vh;
+    padding: 90px 0 60px;
+  }
+
+  .explore-hero .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .explore-hero .lead {
+    font-size: 1.1rem;
+  }
+}
