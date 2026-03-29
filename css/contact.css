@@ -1,0 +1,60 @@
+/* HERO */
+.contact-hero {
+  padding: 120px 0 60px;
+  background: #222;
+}
+
+.contact-hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #fffbf3;
+}
+
+.contact-hero p {
+    color:#fffbf3;
+}
+
+/* SECTION */
+.contact-section {
+  background: #fffbf3;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+
+.contact-item i {
+  color: #ad8641;
+  font-size: 18px;
+}
+
+/* FORM */
+.contact-form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #eee;
+}
+
+.form-control:focus {
+  border-color: #ad8641;
+  box-shadow: none;
+}

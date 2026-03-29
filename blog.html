@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta property="og:title" content="Premium Blog | Walking by Rhema">
+  <meta property="og:description" content="Exclusive faith-based teachings, in-depth reflections, and premium devotionals for deeper growth.">
+  <meta property="og:image" content="https://walkingbyrhema.com/images/hero.png">
+  <title> Blog - Walking by Rhema</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <!-- Custom CSS (reuse existing + add premium-blog.css if needed) -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/blog.css">
+  <!-- Optional: new file for this page -->
+  <!-- <link rel="stylesheet" href="css/premium-blog.css"> -->
+</head>
+<body class="bg-light">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+  <div class="container">
+   <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+  <img src="images/logo2.png" alt="Walking by Rhema Logo" class="navbar-logo">
+  <span class="brand-text">Walking by <span class="Rhema-text"> Rhema</span></span>
+ </a>
+
+   <button 
+  class="navbar-toggler border-0" 
+  type="button" 
+  data-bs-toggle="collapse" 
+  data-bs-target="#navbarContent"
+  aria-controls="navbarContent"
+  aria-expanded="false"
+  aria-label="Toggle navigation">
+
+  <span class="navbar-toggler-icon"></span>
+  <i class="fa-solid fa-xmark toggler-close-icon"></i>
+
+</button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+ <div id="authArea">
+  <a class="btn nav-signin dropdown-toggle" href="#" data-bs-toggle="dropdown">
+    <i class="fa-solid fa-user"></i>
+  </a>
+
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li>
+      <span class="dropdown-item-text" id="userEmail"></span>
+    </li>
+
+    <li><hr class="dropdown-divider"></li>
+
+    <li>
+      <button class="dropdown-item" id="logoutBtn">Logout</button>
+    </li>
+  </ul>
+</div>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="premium-hero position-relative text-white d-flex align-items-center" style="padding-top: 100px; min-height: 70vh;">
+  <div class="container position-relative z-2">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-9">
+
+        <span class="premium-badge mb-4 d-inline-block px-4 py-2 rounded-pill bg-warning text-dark fw-bold">
+          Walking By Rhema Ministry
+        </span>
+
+        <h1 class="display-4 fw-bold mb-4">
+          Deeper Insights. <br>
+          Exclusive Teachings. <br>
+          <span class="text">Purpose Driven Content.</span>
+        </h1>
+
+        <p class="lead fs-4 mb-5 opacity-90" style="max-width: 720px; margin: 0 auto;">
+          Access our curated teachings, reflective studies crafted to strengthen your walk and sharpen your mind for greatness.
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Background (dark overlay + subtle image or gradient) -->
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="
+    background: linear-gradient(rgba(48, 45, 39, 0.78), rgba(46, 43, 37, 0.92)),
+                url('images/community.png') center/cover no-repeat;
+    z-index: 1;">
+  </div>
+</section>
+
+
+
+<!-- ================= FILTERS & SEARCH ================= -->
+<section class="py-4 bg-white border-bottom sticky-top shadow-sm" style="top: 80px; z-index: 1000;">
+  <div class="container">
+    <div class="row g-3 align-items-center">
+      <!-- Categories -->
+      <div class="col-lg-7">
+        <div class="d-flex flex-wrap gap-2" id="categoryFilters">
+          <button class="btn btn-outline-secondary btn-sm active rounded-pill" data-category="all">All</button>
+          <button class="btn btn-outline-secondary btn-sm rounded-pill" data-category="devotional">Devotional</button>
+          <button class="btn btn-outline-secondary btn-sm rounded-pill" data-category="mindset">Mindset & Growth</button>
+          <button class="btn btn-outline-secondary btn-sm rounded-pill" data-category="purpose">Purpose & Calling</button>
+          <button class="btn btn-outline-secondary btn-sm rounded-pill" data-category="wisdom">Wisdom & Fear</button>
+        </div>
+      </div>
+
+      <!-- Search -->
+      <div class="col-lg-5">
+        <div class="input-group input-group-sm">
+          <input type="text" id="searchInput" class="form-control rounded-pill ps-4" placeholder="Search articles...">
+          <button class="btn btn-outline-secondary rounded-pill px-4" type="button"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BLOG ARTICLES GRID ================= -->
+<section class="py-5 py-lg-6 bg-light-cream">
+  <div class="container">
+    <div class="row g-4 g-lg-5" id="blogPostsContainer">
+      <!-- Articles injected here by JS -->
+    </div>
+
+    <!-- Load More Articles-->
+  </div>
+</section>
+
+<!-- ================= FULL ARTICLE MODAL (with comments) ================= -->
+<div class="modal fade" id="articleModal" tabindex="-1" aria-labelledby="articleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content rounded-4 border-0 shadow-xl">
+      <div class="modal-header border-0 pb-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4 p-lg-5">
+        <div id="modalArticleContent">
+          <!-- Dynamic article + comments injected here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-container">
+
+    <!-- Brand + Logo + Socials -->
+    <div class="footer-col footer-brand">
+
+      <!-- Logo -->
+      <div class="footer-logo">
+        <a href="index.html">
+          <img src="images/logo2.png" alt="Walking by Rhema Logo" class="footer-logo-img" loading="lazy">
+        </a>
+      </div>
+
+      <p class="footer-text">
+        Walking by Rhema is a purpose driven brand offering faith-based books
+        and premium apparel to inspire clarity, growth, and intentional living.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/walkingbyrhema" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/walkingbyrhema" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com/@walkingbyrhema" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://tiktok.com/@walkingbyrhema" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://wa.me/234XXXXXXXXXX" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4 class="footer-title">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="account.html">Account</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div class="footer-col">
+      <h4 class="footer-title">Support</h4>
+      <ul class="footer-links">
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="delivery.html">Delivery & Returns</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter + Payment -->
+    <div class="footer-col footer-newsletter">
+      <h4 class="footer-title">Stay Inspired</h4>
+      <p class="footer-text">Get faith-filled content, new book releases & offers.</p>
+
+      <form class="newsletter-form" action="#" method="post">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+
+      <div class="payment-area">
+        <div class="payment-icons">
+          <img src="images/visa.png" alt="Visa payment method">
+          <img src="images/mastercard.png" alt="Mastercard payment method">
+          <img src="images/verve.png" alt="Verve payment method">
+        </div>
+
+        <div class="payment-trust">
+         <i class="fa-solid fa-lock"></i>
+         <span>100% Secure Payments</span>
+       </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Walking by Rhema | All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script>
+
+
+// Sample articles (expand as needed)
+const articles = [
+  {
+    id: 1,
+    title: "Overcoming Fear Through Understanding",
+    category: "wisdom",
+    date: "March 15, 2026",
+    readTime: "8 min",
+    image: "images/blog-fear.png",
+    excerpt: "People are afraid of what they don't know. Understanding demystifies fear...",
+    content: "<p>Full article content goes here. This is where the deep teaching would be...</p><p>More paragraphs, Bible references, personal stories...</p>"
+  },
+  {
+    id: 2,
+    title: "The Power of Daily Discipline",
+    category: "mindset",
+    date: "March 10, 2026",
+    readTime: "6 min",
+    image: "images/blog-discipline.png",
+    excerpt: "Small consistent actions create massive transformation in your spiritual life...",
+    content: "<p>Discipline is the bridge between goals and accomplishment...</p>"
+  },
+  // Add 6–10 more articles
+];
+
+// Render initial posts (show first 6)
+function renderPosts(posts) {
+  const container = document.getElementById('blogPostsContainer');
+  container.innerHTML = '';
+  posts.forEach(post => {
+    const card = `
+      <div class="col">
+        <div class="article-card h-100 cursor-pointer" data-id="${post.id}">
+          <div class="position-relative">
+            <img src="${post.image}" alt="${post.title}" class="w-100">
+            <span class="category-badge">${post.category}</span>
+          </div>
+          <div class="p-4">
+            <h5 class="article-title">${post.title}</h5>
+            <p class="article-excerpt">${post.excerpt}</p>
+            <div class="d-flex justify-content-between small text-muted mt-3">
+              <span>${post.date}</span>
+              <span>${post.readTime}</span>
+            </div>
+          </div>
+        </div>
+      </div>`;
+    container.innerHTML += card;
+  });
+}
+
+// Open full article in modal
+document.addEventListener('click', e => {
+  const card = e.target.closest('.article-card');
+  if (card) {
+    const id = parseInt(card.dataset.id);
+    const article = articles.find(a => a.id === id);
+    
+    document.getElementById('modalArticleContent').innerHTML = `
+      <h2 class="modal-article-title">${article.title}</h2>
+      <img src="${article.image}" alt="${article.title}" class="img-fluid rounded-4 mb-4" style="max-height:500px; width:100%; object-fit:cover;">
+      <div class="modal-article-body">${article.content}</div>
+
+      <!-- Comments -->
+      <div class="comment-section">
+        <h5>Comments</h5>
+        <div id="commentsList"></div>
+        <form id="commentForm" class="mt-4">
+          <input type="text" id="commentName" class="form-control mb-3 rounded-pill" placeholder="Your Name" required>
+          <textarea id="commentText" class="form-control mb-3 rounded-3" rows="3" placeholder="Share your thoughts..." required></textarea>
+          <button type="submit" class="btn btn-primary px-5 py-2 rounded-pill">Post Comment</button>
+        </form>
+      </div>
+    `;
+
+    const modal = new bootstrap.Modal(document.getElementById('articleModal'));
+    modal.show();
+
+    loadComments(id);
+  }
+});
+
+// Comment system (localStorage per article)
+function loadComments(articleId) {
+  const list = document.getElementById('commentsList');
+  const key = `blog_comments_${articleId}`;
+  const comments = JSON.parse(localStorage.getItem(key)) || [];
+
+  list.innerHTML = comments.length === 0 
+    ? '<p class="text-muted">No comments yet. Be the first!</p>'
+    : comments.map(c => `
+        <div class="comment-item">
+          <strong>${c.name}</strong> <small class="text-muted">${new Date(c.date).toLocaleString()}</small>
+          <p class="mt-1">${c.text}</p>
+        </div>
+      `).join('');
+
+  document.getElementById('commentForm').onsubmit = e => {
+    e.preventDefault();
+    const name = document.getElementById('commentName').value.trim();
+    const text = document.getElementById('commentText').value.trim();
+    if (!name || !text) return;
+
+    comments.push({ name, text, date: new Date().toISOString() });
+    localStorage.setItem(key, JSON.stringify(comments));
+    loadComments(articleId);
+    e.target.reset();
+  };
+}
+
+// Category filter + search + load more
+let visibleCount = 6;
+renderPosts(articles.slice(0, visibleCount));
+
+document.getElementById('loadMoreBtn').onclick = () => {
+  visibleCount += 6;
+  renderPosts(articles.slice(0, visibleCount));
+  if (visibleCount >= articles.length) {
+    document.getElementById('loadMoreBtn').style.display = 'none';
+  }
+};
+
+// Category filter
+document.querySelectorAll('#categoryFilters button').forEach(btn => {
+  btn.onclick = () => {
+    document.querySelectorAll('#categoryFilters button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.category;
+    const filtered = cat === 'all' ? articles : articles.filter(a => a.category === cat);
+    renderPosts(filtered);
+  };
+});
+
+// Search
+document.getElementById('searchInput').oninput = e => {
+  const term = e.target.value.toLowerCase();
+  const filtered = articles.filter(a => 
+    a.title.toLowerCase().includes(term) || a.excerpt.toLowerCase().includes(term)
+  );
+  renderPosts(filtered);
+};
+
+</script>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script type="module" src="js/auth-state.js"></script>
+</body>
+</html>

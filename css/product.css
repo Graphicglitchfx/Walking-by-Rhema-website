@@ -1,0 +1,139 @@
+/* ================= PRODUCT PAGE ================= */
+
+.product-hero {
+  padding: 120px 0 60px;
+  background: #222;
+  text-align: center;
+}
+
+.product-hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #fffbf3;
+}
+
+.product-hero p {
+    color:#fffbf3; 
+}
+
+.products-section {
+  background: #fffbf3;
+}
+
+/* Card */
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.35s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.product-img {
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.product-content {
+  margin-top: auto;
+}
+
+.product-content h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product-price {
+  color: #ad8641;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Size Options */
+.size-option {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.size-option:hover {
+  border-color: #ad8641;
+  color: #ad8641;
+}
+
+/* Selected */
+.btn-check:checked + .size-option {
+  background: #ad8641;
+  color: #fff;
+  border-color: #ad8641;
+}
+
+
+
+
+/* Wrapper */
+.product-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Image zoom */
+.product-hover img {
+  transition: transform 0.5s ease;
+}
+
+.product-hover:hover img {
+  transform: scale(1.08);
+}
+
+/* Overlay */
+.product-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-hover:hover .product-overlay {
+  opacity: 1;
+}
+
+/* Button */
+.preview-btn {
+  background: #fff;
+  color: #222;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.preview-btn:hover {
+  background: #ad8641;
+  color: #fff;
+}
+

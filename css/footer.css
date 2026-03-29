@@ -1,0 +1,209 @@
+/* ================= FOOTER ================= */
+.site-footer {
+  background-color: #222;                   /* matches your navbar */
+  color: #bbb;                          /* light readable gray */
+  padding: 70px 0 40px;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin-top: 40px;
+}
+
+.footer-container {
+  /* If you added row class: it's already .row.g-5 */
+  /* If not using row: keep grid fallback */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 48px 32px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  color: #fffbf3;
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin-bottom: 22px;
+  letter-spacing: 0.6px;
+}
+
+.footer-text {
+  color: #bbb;
+  margin-bottom: 28px;
+  font-size: 0.97rem;
+}
+
+/* Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 14px;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.25s ease, padding-left 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  color: #ad8641;                      /* your gold accent */
+  padding-left: 6px;
+}
+
+/* Social Icons – clean, circular, gold hover */
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  padding-right: 5px;
+}
+
+.footer-socials a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.07);
+  color: #fffbf3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  text-decoration: none
+}
+
+.footer-socials a:hover {
+  background: #ad8641;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(173,134,65,0.3);
+}
+
+/* Newsletter */
+.newsletter-form {
+  display: flex;
+  margin: 20px 0 24px;
+  max-width: 380px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 13px 18px;
+  border: none;
+  background: #333;
+  color: #bbb;
+  border-radius: 6px 0 0 6px;
+  font-size: 0.96rem;
+}
+
+.newsletter-form input::placeholder {
+  color: #aaa;
+}
+
+.newsletter-form button {
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #ff523b 0%, #ad8641 100%);
+  color: #fffbf3;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.newsletter-form button:hover {
+  background: linear-gradient(90deg, #ff523b 0%, #7a5e2e 100%);
+  transform: translateY(-1px);
+}
+
+/* Payment */
+.payment-icons {
+  display: flex;
+  gap: 2px;
+  margin: 6px 0;
+}
+
+.payment-icons img {
+  height: 32px;
+  filter: brightness(1.08);
+}
+
+.payment-trust {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #8a8a8a;
+  font-size: 0.93rem;
+}
+
+.payment-trust i {
+  color: #6a6a6a;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 15px;
+  border-top: 1px solid #bbb;
+  color: #bbb;
+  font-size: 0.92rem;
+}
+
+
+.footer-logo-img {
+  width: 70px;
+  height: 70px;
+
+  margin-top: -20px;   /* 👈 moves ONLY logo up */
+  margin-bottom: 2px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .footer-container {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 60px 0 40px;
+  }
+
+  .footer-col {
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .newsletter-form {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    border-radius: 6px;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  .payment-icons {
+    justify-content: center;
+  }
+}
+

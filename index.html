@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta property="og:title" content="Walking by Rhema">
+  <meta property="og:description" content="Purpose-driven books to inspire clarity and growth.">
+  <meta property="og:image" content="https://walkingbyrhema.com/images/hero.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.ico">
+  <meta name="description" content="Walking by Rhema - Purpose-driven books and apparel.">
+  <title>Walking by Rhema</title>
+
+  <!-- Rubik Font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 Free -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/quote.css">
+  <link rel="stylesheet" href="css/books.css">
+  <link rel="stylesheet" href="css/offer.css">
+  <link rel="stylesheet" href="css/why choose us.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+  <div class="container">
+   <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+  <img src="images/logo2.png" alt="Walking by Rhema Logo" class="navbar-logo">
+  <span class="brand-text">Walking by <span class="Rhema-text"> Rhema</span></span>
+ </a>
+
+   <button 
+  class="navbar-toggler border-0" 
+  type="button" 
+  data-bs-toggle="collapse" 
+  data-bs-target="#navbarContent"
+  aria-controls="navbarContent"
+  aria-expanded="false"
+  aria-label="Toggle navigation">
+
+  <span class="navbar-toggler-icon"></span>
+  <i class="fa-solid fa-xmark toggler-close-icon"></i>
+
+</button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+ <div id="authArea">
+  <a class="btn nav-signin dropdown-toggle" href="#" data-bs-toggle="dropdown">
+    <i class="fa-solid fa-user"></i>
+  </a>
+
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li>
+      <span class="dropdown-item-text" id="userEmail"></span>
+    </li>
+
+    <li><hr class="dropdown-divider"></li>
+
+    <li>
+      <button class="dropdown-item" id="logoutBtn">Logout</button>
+    </li>
+  </ul>
+</div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Text Column -->
+      <div class="col-lg-6 text-column">
+        <!-- Tag + Typewriter -->
+        <span class="hero-tag">
+          <img src="images/Open book.png" alt="Open book icon" class="hero-icon" />
+          <span id="typewriter"></span>
+        </span>
+
+        <!-- Main Heading -->
+        <h1 class="hero-title fw-bold">
+          Live with clarity, walk with <span class="brand-accent">purpose</span>
+        </h1>
+
+        <!-- Subtext -->
+        <p class="lead mt-3">
+          Discover thoughtfully written books to strengthen your mindset, inspire growth, and guide your everyday decisions.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-buttons d-flex gap-1 flex-wrap justify-content-lg-start justify-content-center">
+          <a href="explore books.html" class="btn btn-primary hero-btn">Explore Books</a>
+          <a href="about.html" class="btn btn-outline-dark hero-btn">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Image Column -->
+      <div class="col-lg-6 text-center mt-4 mt-lg-0">
+        <img src="images/hero img.png" alt="Walking by Rhema Hero" class="img-fluid hero-img">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= QUOTE SECTION ================= -->
+<section class="quote-section py-5">
+  <div class="container">
+
+    <div id="quoteCarousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+  <div class="carousel-inner">
+
+    <!-- Quote 1 -->
+    <div class="carousel-item active">
+      <div class="quote-card">
+        <div class="quote-mark">“</div>
+        <div class="quote-content">
+          <div class="quote-author">
+            <img src="images/Pius Akeh.jpg" alt="Pius Akeh" class="quote-img">
+            <span class="author-name">Pius Akeh</span>
+          </div>
+          <p class="quote-text">
+            People are afraid of what they don't know. Understanding demystifies fear.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote 2 -->
+    <div class="carousel-item">
+      <div class="quote-card">
+        <div class="quote-mark">“</div>
+        <div class="quote-content">
+          <div class="quote-author">
+            <img src="images/Pius Akeh.jpg" alt="Pius Akeh" class="quote-img">
+            <span class="author-name">Pius Akeh</span>
+          </div>
+          <p class="quote-text">
+            Overcoming fear increases personal confidence to manifest your best version.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote 3 -->
+    <div class="carousel-item">
+      <div class="quote-card">
+        <div class="quote-mark">“</div>
+        <div class="quote-content">
+          <div class="quote-author">
+            <img src="images/Pius Akeh.jpg" alt="Pius Akeh" class="quote-img">
+            <span class="author-name">Pius Akeh</span>
+          </div>
+          <p class="quote-text">
+            Wisdom turns problems into stepping stones.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+</section>
+
+<!-- ================= FEATURED BOOKS ================= -->
+<section class="featured-books py-5">
+  <div class="container">
+
+    <div class="text-center mb-5">
+     <h2 class="section-title text-center">Featured Books</h2>
+  
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Book 1 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="book-card">
+          <img src="images/Book 1.png" alt="Become Naturally Great book cover" class="img-fluid book-img">
+
+          <div class="book-content">
+            <h5 class="book-title">Become Naturally Great</h5>
+            <p class="book-description">
+              Unlock your potential and live the life you were designed for.
+            </p>
+            <p class="book-price">₦5,000.00</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 2 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="book-card">
+          <img src="images/Book 2.png" alt="Solving Problems God's Way book cover" class="img-fluid book-img">
+
+          <div class="book-content">
+            <h5 class="book-title">Solving Problems God's Way</h5>
+            <p class="book-description">
+              A faith-centered guide to overcoming challenges and finding solutions.
+            </p>
+            <p class="book-price">₦4,000.00</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 3 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="book-card">
+          <img src="images/Book 3.png" alt="Created for More book cover" class="img-fluid book-img">
+
+          <div class="book-content">
+            <h5 class="book-title">Created for More</h5>
+            <p class="book-description">
+              Embrace your calling and step confidently into the life you were designed to live.
+            </p>
+            <p class="book-price">₦5,000.00</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 4 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="book-card">
+          <img src="images/Book 4.png" alt="The Journey book cover" class="img-fluid book-img">
+
+          <div class="book-content">
+            <h5 class="book-title">The Journey</h5>
+            <p class="book-description">
+              A faith-centered guide to growth, transformation, and purposeful living.
+              This is a great guide.
+              All in one book.
+            </p>
+            <p class="book-price">₦5,000.00</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPECIAL OFFER ================= -->
+<section class="offer-section py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+
+      <!-- Image -->
+      <div class="col-lg-6 text-center">
+        <img src="images/Content img.png"
+             alt="Faith-Driven Books and Apparel"
+             class="img-fluid offer-img">
+      </div>
+
+      <!-- Text Content -->
+      <div class="col-lg-6">
+        <span class="offer-tag">Exclusively Available on Walking by Rhema<br> Store</span>
+
+        <h2 class="offer-title mt-3">
+          Faith-Driven Books <br>
+          & Custom Apparel
+        </h2>
+
+        <p class="offer-description mt-3">
+          Explore our curated collection of faith-based books and custom apparel
+          designed to uplift your spirit and empower your journey.
+        </p>
+
+        <a href="products.html" class="btn btn-primary offer-btn mt-3">
+          Explore Collection
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= Our Goals ================= -->
+<section class="why-container section-cream fade-up">
+  <div class="container">
+     
+    <div class="text-center mb-5">
+         <h2 class="section-title text-center">Our Goals</h2>
+    </div>
+   
+   
+
+    <p class="why-intro">
+    To equip individuals with faith-based teachings, inspirational literature that reflects their identity in Christ 
+    and inspires them to live boldly according to God’s truth.
+    </p>
+
+
+    <div class="why-grid">
+
+      <div class="why-card">
+       <div class="why-icon">
+       <img src="images/wisdom for enlight.png" 
+       alt="Premium craftsmanship icon" class="img-fluid">
+       </div>
+        <h4 class="text-start">Wisdom for Enlightenment</h4>
+        <p class="text-muted text-start">
+         We prioritize deep understanding rooted in self-awareness and inner clarity. This awareness guides you beyond ignorance, 
+         helping you see life as a continuous process of learning. In this way, wisdom becomes the path that leads to enlightenment.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+       <img src="images/purpose.png" 
+       alt="Premium craftsmanship icon" class="img-fluid">
+       </div>
+        <h4  class="text-start" >Purpose-Driven Content</h4>
+        <p class="text-muted text-start">
+          Our books are carefully written to inspire growth, discipline,
+          and intentional living.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+       <img src="images/teaching.png" 
+       alt="Practical Teachings icon" class="img-fluid">
+       </div>
+        <h4  class="text-start">Practical Teachings</h4>
+        <p class="text-muted text-start">
+          We are not just dishing out ideas to understand, but principles to live by. Through action, discipline, and reflection. 
+          True learning happens when wisdom is practiced consistently, shaping habits, decisions, and personal growth.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= WHY CHOOSE US  ================= -->
+<section class="why-choose py-5 py-lg-6 bg-light-cream">
+  <div class="container">
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-xl-8 text-center">
+
+        <h2 class="why-title mb-4">
+          Why Choose Us
+        </h2>
+
+        <p class="why-subtitle lead mb-5 pb-3">
+          We create more than books.<br class="d-none d-sm-inline">
+          We craft daily companions that awaken clarity, strengthen purpose,<br class="d-none d-md-inline">
+          and help you walk boldly in the life you were designed for.
+        </p>
+
+      </div>
+    </div>
+
+    <div class="row g-5 justify-content-center">
+
+      <div class="col-md-4 text-center text-md-start">
+        <div class="why-point">
+          <div class="why-number">01</div>
+          <h3 class="why-point-title">Clarity Over Confusion</h3>
+          <p class="why-point-text">
+            Deep, honest teachings that bring light to your decisions 
+            and peace to your inner world.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center text-md-start">
+        <div class="why-point">
+          <div class="why-number">02</div>
+          <h3 class="why-point-title">Purpose That Stays</h3>
+          <p class="why-point-text">
+            Content written to build lasting discipline, intentional habits, 
+            and alignment with your true calling.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center text-md-start">
+        <div class="why-point">
+          <div class="why-number">03</div>
+          <h3 class="why-point-title">Truth You Live</h3>
+          <p class="why-point-text">
+            Practical principles designed for daily practice — 
+            transformation that shows in your actions, not just your bookshelf.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-container">
+
+    <!-- Brand + Logo + Socials -->
+    <div class="footer-col footer-brand">
+
+      <!-- Logo -->
+      <div class="footer-logo">
+        <a href="index.html">
+          <img src="images/logo2.png" alt="Walking by Rhema Logo" class="footer-logo-img" loading="lazy">
+        </a>
+      </div>
+
+      <p class="footer-text">
+        Walking by Rhema is a purpose driven brand offering faith-based books
+        and premium apparel to inspire clarity, growth, and intentional living.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/walkingbyrhema" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/walkingbyrhema" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com/@walkingbyrhema" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://tiktok.com/@walkingbyrhema" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://wa.me/234XXXXXXXXXX" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4 class="footer-title">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="account.html">Account</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div class="footer-col">
+      <h4 class="footer-title">Support</h4>
+      <ul class="footer-links">
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="delivery.html">Delivery & Returns</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter + Payment -->
+    <div class="footer-col footer-newsletter">
+      <h4 class="footer-title">Stay Inspired</h4>
+      <p class="footer-text">Get faith-filled content, new book releases & offers.</p>
+
+      <form class="newsletter-form" action="#" method="post">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+
+      <div class="payment-area">
+        <div class="payment-icons">
+          <img src="images/visa.png" alt="Visa payment method">
+          <img src="images/mastercard.png" alt="Mastercard payment method">
+          <img src="images/verve.png" alt="Verve payment method">
+        </div>
+
+        <div class="payment-trust">
+         <i class="fa-solid fa-lock"></i>
+         <span>100% Secure Payments</span>
+       </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Walking by Rhema | All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script type="module" src="js/protect.js"></script>
+<script type="module" src="js/auth-state.js"></script>
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

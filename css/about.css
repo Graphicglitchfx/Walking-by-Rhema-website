@@ -1,0 +1,75 @@
+.product-hero {
+  padding: 120px 0 60px;
+  background: #222;
+  text-align: center;
+}
+
+.product-hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #fffbf3;
+}
+
+.product-hero p {
+    color:#fffbf3; 
+}
+
+
+
+/* ABOUT */
+.about-section {
+  background: #fffbf3;
+}
+
+.about-img {
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.about-tag {
+  color: #ad8641;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.about-text {
+  color: #333;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* MISSION */
+.mission-section {
+  background: #f9f0e6;
+}
+
+.mission-text {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* VALUES */
+.values-section {
+  background: #fffbf3;
+}
+
+.value-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+}
