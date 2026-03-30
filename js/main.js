@@ -1,5 +1,6 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
+
 document.addEventListener("DOMContentLoaded", function () {
   const words = [
     "Faith propels",
