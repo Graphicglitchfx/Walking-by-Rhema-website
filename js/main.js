@@ -1,12 +1,10 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const words = [
-    "Faith that moves you forward",
-    "Growth that shapes your journey",
-    "Purpose that defines your path"
+    "Faith propels",
+    "Growth molds",
+    "Purpose guides"
   ];
 
   let wordIndex = 0;
